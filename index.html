@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cálculos Básicos con JavaScript</title>
+</head>
+<body>
+    <header class="header-principal">
+        <h1>Cálculos Básicos con JavaScript</h1>
+        <p>Coloca los valores en los campos de entrada y haz clic en los botones para realizar los cálculos.</p>
+    </header>
+
+    <main class="contenedor">
+        <!-- Tarjeta 1: Suma de tres valores -->
+        <section class="tarjeta">
+            <h2>1. Suma de tres valores</h2>
+            <input type="number" id="suma1" placeholder="Número 1">
+            <input type="number" id="suma2" placeholder="Número 2">
+            <input type="number" id="suma3" placeholder="Número 3">
+            <button onclick="calcularSuma()">Calcular Suma</button>
+            <p id="resultadoSuma" class="resultado"></p>
+        </section>
+
+        <!-- Tarjeta 2: Cuadrado de un número -->
+        <section class="tarjeta">
+            <h2>2. Cuadrado de un número</h2>
+            <input type="number" id="numCuadrado" placeholder="Escribe un número">
+            <button onclick="calcularCuadrado()">Calcular cuadrado</button>
+            <p id="resultadoCuadrado" class="resultado"></p>
+        </section>
+
+        <!-- Tarjeta 3: Promedio de calificaciones -->
+        <section class="tarjeta">
+            <h2>3. Promedio de calificaciones</h2>
+            <input type="text" id="nombreEstudiante" placeholder="Nombre del estudiante">
+            <input type="number" id="calif1" placeholder="Calificación 1">
+            <input type="number" id="calif2" placeholder="Calificación 2">
+            <input type="number" id="calif3" placeholder="Calificación 3">
+            <button onclick="calcularPromedio()">Calcular promedio</button>
+            <p id="resultadoPromedio" class="resultado"></p>
+        </section>
+
+        <!-- Tarjeta 4: Conversión de unidades (metros) -->
+        <section class="tarjeta">
+            <h2>4. Conversión de unidades (Metros)</h2>
+            <input type="number" id="valorMetros" placeholder="Valor en metros">
+            <button onclick="convertirUnidades()">Convertir</button>
+            <p id="resultadoConversion" class="resultado"></p>
+        </section>
+
+        <!-- Tarjeta 5: Comparación de dos valores -->
+        <section class="tarjeta">
+            <h2>5. Comparación de dos valores</h2>
+            <input type="number" id="comp1" placeholder="Número 1">
+            <input type="number" id="comp2" placeholder="Número 2">
+            <button onclick="compararValores()">Comparar valores</button>
+            <p id="resultadoComparacion" class="resultado"></p>
+        </section>
+    </main>
+
+    <footer class="footer-principal">
+        <p>Universidad Tecnológica de Panamá - Facultad de Ingeniería de Sistemas Computacionales</p>
+    </footer>
+</body>
+</html>
